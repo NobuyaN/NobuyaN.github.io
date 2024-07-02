@@ -1,0 +1,34 @@
+div {
+  font-family:"Arial";
+}
+
+li {
+  font-style:italic;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+a:hover {
+  color:red;
+}
+
+.titleText {
+  font-size: 45px;
+  font-weight:bold;
+}
+
+.sidebarText {
+  font-weight:bold;
+}
+
+.subtitleText {
+  font-weight:bold;
+
+}
+
+.bottomText {
+  color:white;
+  font-weight:bold;
+}
