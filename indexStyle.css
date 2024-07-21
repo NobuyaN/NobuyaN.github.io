@@ -1,0 +1,37 @@
+body {
+  color:azure;
+}
+
+span.homeTitle {
+font-size: 60px;
+}
+
+span.dividers {
+  font-size: 30px;
+}
+
+td.aboutMe {
+  text-align: center;
+  
+}
+
+span.aboutMeTitle {
+  font-size: 40px;
+}
+
+span.contactTitle {
+  font-size: 30px;
+}
+
+a.pageLinks {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a.studyLinks {
+  color:antiquewhite;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
