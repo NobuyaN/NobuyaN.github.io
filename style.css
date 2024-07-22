@@ -1,0 +1,40 @@
+body {
+  font-family:'Gill Sans';
+}
+
+span.title {
+font-size: 60px;
+}
+
+span.subTitle {
+  font-size: 40px;
+}
+
+span.contactTitle {
+  font-size: 30px;
+}
+
+a.links {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a.usefulLinks {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+td.aboutMe {
+  text-align: center;
+  
+}
+
+td.number {
+  font-size: 30px;
+  text-align: center;
+}
+
+td.tableBody {
+  text-align: center;
+}

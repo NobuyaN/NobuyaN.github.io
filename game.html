@@ -2,80 +2,80 @@
 <html>
     <head>
         <title>GAME</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
         <script type="text/javascript">
-            function displayScore(){
+            function score(){
                 var score = 0;
-                var name = document.simpleForm.name.value;
-                if (document.simpleForm.question1.value == "Japanese/Japanese") {
+                if (document.form.question1.value == "4") {
                     score++;
                 }
-                if (document.simpleForm.question2.value == "Valorant") {
+                if (document.form.question2.value == "10") {
                     score++;
                 }
-                if (document.simpleForm.question3.value == "Good") {
+                if (document.form.question3.value == "-infinity") {
                     score++;
                 }
-                if (document.simpleForm.question4.value == "Nishinomiya, Hyogo") {
+                if (document.form.question4.value == "r dr dtheta") {
                     score++;
                 }
-                if (document.simpleForm.question5.value == "4") {
+                if (document.form.question5.value == "Very hot") {
                     score++;
                 }
-                alert("Hello, " + name + "! Your score is " + (score * 20));
+                alert("Hello, " + document.form.name.value + "! Your score is " + score * 20);
             }
         </script>
     </head>
     <body>
-        <form name="simpleForm">
+        <form name="form">
             Name: <input type="text" size="20" name="name">
-            <br>
-            What is my nationality?
+            <br><br>
+            <span class="question">What is 2+2?</span>
             <select name="question1">
                 <option></option>
-                <option value="German/Japanese">German/Japanese</option>
-                <option value="Japanese/Thai">Japanese/Thai</option>
-                <option value="Thai/Vietnamese">Thai/Vietnamese</option>
-                <option value="Japanese/Japanese">Japaese/Japanese</option>
-            </select>
-            <br>
-            What is my favorite game?
-            <select name="question2">
-                <option></option>
-                <option value="Rainbow Six Seige">Rainbow Six Seige</option>
-                <option value="Valorant">Valorant</option>
-                <option value="Minecraft">Minecraft</option>
-                <option value="Fortnite">Fortnite</option>
-            </select>
-            <br>
-            Am I good at English?
-            <select name="question3">
-                <option></option>
-                <option value="Extremely good">Extremely good</option>
-                <option value="Good">Good</option>
-                <option value="Alright">Alright</option>
-                <option value="Terrible">Terrible</option>
-            </select>
-            <br>
-            Where do I live?
-            <select name="question4">
-                <option></option>
-                <option value="Ibaraki, Osaka">Ibaraki, Osaka</option>
-                <option value="Kobe, Hyogo">Kobe, Hyogo</option>
-                <option value="Nishinomiya, Hyogo">Nishinomiya, Hyogo</option>
-                <option value="Tennoji, Osaka">Tennoji, Osaka</option>
-            </select>
-            <br>
-            How many years did I live in the Netherlands?
-            <select name="question5">
-                <option></option>
-                <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="1">1</option>
+                <option value="5">5</option>
                 <option value="4">4</option>
             </select>
-            <br>
-            <input type="reset" value="RESET" name="resetButton">
-            <input type="button" value="SUBMIT" name="submitButton" onclick="displayScore()">
+            <br><br>
+            <span class="question">What is 100 / 10?</span>
+            <select name="question2">
+                <option></option>
+                <option value="10">10</option>
+                <option value="5">5</option>
+                <option value="20">20</option>
+                <option value="90">90</option>
+            </select>
+            <br><br>
+            <span class="question">What is the limit of x to -infinity?</span>
+            <select name="question3">
+                <option></option>
+                <option value="0">0</option>
+                <option value="-infinity">-infinity</option>
+                <option value="idk">idk</option>
+                <option value="90">90</option>
+            </select>
+            <br><br>
+            <span class="question">What is dxdy in polar coordinate?</span>
+            <select name="question4">
+                <option></option>
+                <option value="dxdy">dxdy</option>
+                <option value="drdtheta">drdtheta</option>
+                <option value="r dr dtheta">r dr dtheta</option>
+                <option value="x">x</option>
+            </select>
+            <br><br>
+            <span class="question">How hot is Japan?</span>
+            <select name="question5">
+                <option></option>
+                <option value="Very hot">Very hot</option>
+                <option value="Hot">Hot</option>
+                <option value="Normal">Normal</option>
+                <option value="Cold">Cold</option>
+            </select>
+            <br><br>
+            <input type="reset" value="RESET" name="reset">
+            <input type="button" value="SUBMIT" name="submit" onclick="score()">
         </form>
 
         <br>
